@@ -11,6 +11,7 @@
     <modules>
         <module>EurekaServer</module>
         <module>EurekaService</module>
+        <module>RibbonConsumer</module>
     </modules>
 
     <!-- Inherit defaults from Spring Boot -->
@@ -34,10 +35,25 @@
         </pluginRepository>
     </pluginRepositories>
 
+    <!--公共依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
     <!-- 依赖统一管理 -->
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.SR4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
