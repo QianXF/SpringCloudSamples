@@ -12,6 +12,7 @@
         <module>EurekaServer</module>
         <module>EurekaService</module>
         <module>RibbonConsumer</module>
+        <module>FeignConsumer</module>
     </modules>
 
     <!-- Inherit defaults from Spring Boot -->
