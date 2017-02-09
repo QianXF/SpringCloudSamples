@@ -15,6 +15,7 @@
         <module>FeignConsumer</module>
         <module>ZuulServer</module>
         <module>ConfigServer</module>
+        <module>ConfigClient</module>
     </modules>
 
     <!-- Inherit defaults from Spring Boot -->
